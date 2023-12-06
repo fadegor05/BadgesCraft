@@ -1,0 +1,4 @@
+name: BadgesCraft
+version: '${project.version}'
+main: me.fadegor05.badgescraft.BadgesCraft
+api-version: '1.20'
