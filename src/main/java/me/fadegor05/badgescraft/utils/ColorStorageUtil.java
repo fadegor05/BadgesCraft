@@ -33,10 +33,11 @@ public class ColorStorageUtil {
         for (Color color : colors){
             if (color.getId().equals(id)){
                 colors.remove(color);
+                // TODO: save colors
                 break;
             }
         }
-        // TODO: save colors
+
     }
 
     public static Color updateColor(String id, Color newColor){

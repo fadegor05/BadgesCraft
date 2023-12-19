@@ -33,11 +33,10 @@ public class TemplateStorageUtil {
         for (Template template : templates) {
             if(template.getId().equals(id)){
                 templates.remove(template);
+                //TODO: save templates
                 break;
             }
         }
-
-        //TODO: save templates
     }
 
     public static Template updateTemplate(String id, Template newTemplate){
