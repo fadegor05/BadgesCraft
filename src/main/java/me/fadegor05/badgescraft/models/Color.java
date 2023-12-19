@@ -5,6 +5,14 @@ public class Color {
     private String name;
     private String id;
 
+    public Color(int r, int g, int b, String name, String id) {
+        this.r = r;
+        this.g = g;
+        this.b = b;
+        this.name = name;
+        this.id = id;
+    }
+
     public int getR() {
         return r;
     }

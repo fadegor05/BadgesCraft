@@ -8,6 +8,13 @@ public class User {
     private ArrayList<String> colors;
     private ArrayList<String> badges;
 
+    public User(String playerName, ArrayList<String> templates, ArrayList<String> colors, ArrayList<String> badges) {
+        this.playerName = playerName;
+        this.templates = templates;
+        this.colors = colors;
+        this.badges = badges;
+    }
+
     public String getPlayerName() {
         return playerName;
     }

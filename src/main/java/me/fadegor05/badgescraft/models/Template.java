@@ -5,6 +5,12 @@ public class Template {
     private String name;
     private String id;
 
+    public Template(char template, String name, String id) {
+        this.template = template;
+        this.name = name;
+        this.id = id;
+    }
+
     public char getTemplate() {
         return template;
     }

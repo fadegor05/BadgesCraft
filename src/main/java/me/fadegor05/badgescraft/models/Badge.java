@@ -6,6 +6,13 @@ public class Badge {
     private Color color;
     private Template template;
 
+    public Badge(String name, String id, Color color, Template template) {
+        this.name = name;
+        this.id = id;
+        this.color = color;
+        this.template = template;
+    }
+
     public String getName() {
         return name;
     }
