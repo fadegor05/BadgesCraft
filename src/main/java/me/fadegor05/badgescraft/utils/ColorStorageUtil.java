@@ -19,20 +19,19 @@ public class ColorStorageUtil {
 
     public static Color findColor(String id){
         for (Color color : colors){
-            if (color.getId().equalsIgnoreCase(id)){
+            if (color.getId().equals(id)){
                 return color;
             }
         }
 
         return null;
-        // TODO: save colors
     }
 
     public static ArrayList<Color> getAllColor() { return colors; }
 
     public static void deleteColor(String id){
         for (Color color : colors){
-            if (color.getId().equalsIgnoreCase(id)){
+            if (color.getId().equals(id)){
                 colors.remove(color);
                 break;
             }
@@ -42,16 +41,16 @@ public class ColorStorageUtil {
 
     public static Color updateColor(String id, Color newColor){
         for (Color color : colors){
-            if (color.getId().equalsIgnoreCase(id)){
+            if (color.getId().equals(id)){
                 color.setR(newColor.getR());
                 color.setG(newColor.getG());
                 color.setB(newColor.getB());
                 color.setName(newColor.getName());
                 color.setId(newColor.getId());
             }
-            return color;
-
             // TODO: save colors
+
+            return color;
         }
 
         return null;
