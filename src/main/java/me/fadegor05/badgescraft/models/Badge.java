@@ -3,10 +3,10 @@ package me.fadegor05.badgescraft.models;
 public class Badge {
     private String name;
     private String id;
-    private Color color;
-    private Template template;
+    private String color;
+    private String template;
 
-    public Badge(String name, String id, Color color, Template template) {
+    public Badge(String name, String id, String color, String template) {
         this.name = name;
         this.id = id;
         this.color = color;
@@ -29,19 +29,19 @@ public class Badge {
         this.id = id;
     }
 
-    public Color getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
-    public Template getTemplate() {
+    public String getTemplate() {
         return template;
     }
 
-    public void setTemplate(Template template) {
+    public void setTemplate(String template) {
         this.template = template;
     }
 }

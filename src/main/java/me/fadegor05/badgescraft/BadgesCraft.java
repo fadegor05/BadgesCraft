@@ -14,7 +14,14 @@ public final class BadgesCraft extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        plugin = this;
+
+        if (!plugin.getDataFolder().exists()) {
+            plugin.getDataFolder().mkdir();
+        }
+
         logger.info("BadgesCraft 1.0 has been enabled!");
+
     }
 
 }
